@@ -9,24 +9,6 @@ internal enum Brokers : byte
     AngelOne
 }
 
-internal enum Exchange : byte
-{
-    NSE,
-    BSE,
-    MCX
-}
-
-internal enum Index : byte
-{
-    NIFTY,
-    BANKNIFTY,
-    FINNIFTY,
-    MIDCPNIFTY,
-    NIFTYNXT50,
-    SENSEX,
-    BANKEX
-}
-
 internal interface IBrokerAdapter
 {
     public Brokers? _brokerId { get; init; }
